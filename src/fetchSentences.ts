@@ -2,7 +2,7 @@ import data from "./data";
 
 const fetchSentences = async () => {
   try {
-    const response = await fetch("http://metaphorpsumss.com/sentences/2");
+    const response = await fetch("http://metaphorpsum.com/sentences/2");
     if (response.status >= 400) {
       const data = await response.text();
       return data;
