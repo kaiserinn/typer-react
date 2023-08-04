@@ -23,7 +23,7 @@ const Keyboard = ({ currChar }: { currChar: string }) => {
         ))}
       </div>
       <div className="flex justify-center gap-2">
-        <Key char="__" wide={true} pressed={currChar} />
+        <Key char=" " wide={true} pressed={currChar} />
       </div>
     </div>
   );

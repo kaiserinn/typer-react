@@ -7,3 +7,24 @@
 *::after {
   outline: 1px solid red;
 } */
+
+.cursor {
+  position: relative;
+}
+
+.cursor::after {
+  @apply border-b-2 border-b-gray-100 text-gray-300;
+  content: "";
+  width: 13px;
+  height: 28px;
+  /* border-bottom: 2px solid rgb(209 213 219); */
+  position: absolute;
+  inset: 0;
+  animation: blinking 1s steps(2) infinite;
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 0;
+  }
+}

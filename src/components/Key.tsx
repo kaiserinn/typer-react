@@ -13,7 +13,7 @@ const Key = ({ char, wide, pressed }: KeyProps) => {
         (pressed === char ? "bg-gray-300 text-gray-800" : "text-gray-300")
       }
     >
-      {char}
+      {wide ? "__" : char}
     </button>
   );
 };
